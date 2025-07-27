@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div *ngIf="pokemonList?.length > 0; else loading" class="container">
+  <div class="card-list">
+    <div *ngFor="let pokemon of pokemonList" class="card">
+        <div class="card-content">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png"
+              alt="{{ pokemon.name}}">
+          <h2>{{ pokemon.name}}</h2>
+        </div>
+    </div>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="loader-container">
+    <p class="loader"></p>
+    <p>Loading...</p>
+  </div>
+</ng-template>
+
+<app-footer></app-footer>
