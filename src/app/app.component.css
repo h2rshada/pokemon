@@ -1,57 +1,58 @@
 .container {
-  margin: 0;
-  padding: 20px;
-  background-color: #f0f0f0;
+ text-align: center;
+ display: block;
+ height: 850px;
+ margin: 40PX;
+}
 
+.pagination-controls {
+  margin: 0 20px;
 }
 
 .card-list { 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
+.pagination {
+  margin: 30px;
+}
+
+.pagination button {
+  background-color: #1abc9c;
+  padding: 10px;
+  border: 0 none;
+  border-radius: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #eee !important;
+  color: #000 !important;
+  cursor: not-allowed !important;
+}
 
 .card {
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(33, 49, 59, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
 }
 
-
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-
 .card-content {
-  padding: 15px;
   text-align: center;
-  background-color: white;
-  transition: background-color 0.3s ease;
+  text-transform: capitalize;
 }
 
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-
-.card:hover img {
-  transform: scale(1.05);
-}
-
-.card:hover .card-content {
-  background-color: #f9f9f9;
-  text-transform: capitalize;
+  box-shadow: 0 12px 24px #0fcab144;
 }
 
 

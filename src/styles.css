@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: 'Segoe UI', sans-serif;
-  height: 100%;
+  margin: 0;
 }
 
 .header , .footer{
@@ -10,12 +10,13 @@ body {
   background: #1abc9c;
   color: white;
   font-size: 15px;
-  position: fixed;
-  width: 100%;
 }
 
 .footer {
+  position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .loader-container {
