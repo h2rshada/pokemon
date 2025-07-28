@@ -1,12 +1,12 @@
 .container {
  text-align: center;
- display: block;
- height: 850px;
+ height: auto;
  margin: 40PX;
+ overflow: hidden;
 }
 
 .pagination-controls {
-  margin: 0 20px;
+  margin: 20px;
 }
 
 .card-list { 
@@ -16,7 +16,7 @@
 }
 
 .pagination {
-  margin: 30px;
+  margin: 30px 0 50px 0;
 }
 
 .pagination button {

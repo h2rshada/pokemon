@@ -33,7 +33,7 @@ export class AppComponent {
           ];
         }); 
       } else {
-        this.error = ('Something went wrong')
+        this.error = ('Something went wrong');
       }    
     });
   }
